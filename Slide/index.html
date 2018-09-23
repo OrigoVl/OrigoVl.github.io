@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libs/normalize/normalize.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" href="libs/remodal/remodal.css">
+    <link rel="stylesheet" href="libs/remodal/remodal-default-theme.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="assets/scss/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="j-header" class="header">
+        <div class="g-container row navbar j-navbar">
+            <div class="col-sm-6 navbar__logo-wrapper">
+                <a href="#!">
+                    <img
+                        class="navbar__logo"
+                        src="assets/images/Logo.png"
+                        alt="Logo"
+                    >
+                </a>
+            </div>
+            <div class="col-sm-6 navbar__menu-wrapper">
+                    <button class="hamburger hamburger--spring j-header-hamburger" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <a class="navbar__menu-item" href="#modal">
+                        <img
+                            src="assets/images/shopping-cart.svg"
+                            alt="Shopping cart"
+                        >
+                    </a>
+                    <div class="remodal" data-remodal-id="modal">
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                        <h2 class="basket__title">Корзина</h2>
+                        <div class="basket">
+                            <div class="row basket__item-wrapper">
+                                <div class="col-sm-4 basket__item-image">
+                                    <a href="#!">
+                                        <img
+                                            class="basket__image"
+                                            src="assets/images/basket-item.jpg"
+                                            alt="Baskt item"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="col-sm-8 basket__item-text">
+                                    <a
+                                        class="basket__item-title"
+                                        href="#!"
+                                    >
+                                        Костыль
+                                    </a>
+                                    <span class="basket__item-description">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                        Facere numquam iure inventore magni tenetur!
+                                        Quos ullam dicta sint ratione tempore natus,
+                                        laboriosam iusto asperiores numquam voluptate possimus
+                                    </span>
+                                    <span class="basket__price">
+                                        123$
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row basket__order">
+                            <div class="col-sm-9 g-fm-h g-dp">
+                                <span class="basket__sum">Итог: 123$</span>
+                            </div>
+                            <div class="col-sm-3 g-dp">
+                                <button data-remodal-action="confirm" class="g-button">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="navbar__menu-item" href="#!">
+                        <img
+                            src="assets/images/twitter-logo.svg"
+                            alt="Twitter logo"
+                        >
+                    </a>
+                    <a class="navbar__menu-item" href="#!">
+                        <img
+                            src="assets/images/facebook-logo.svg"
+                            alt="Facebook logo"
+                        >
+                    </a>
+            </div>
+        </div>
+        <div class="header__carousel j-header-carousel">
+            <div class="header__slide-container header__slide-container--first">
+                <div class="header__title-wrapper">
+                    <h1 class="header__title">
+                        BUILDING THE<br>
+                        WORLD AROUND US
+                    </h1>
+                    <span class="header__description">
+                        Still other clients have reserved for capital
+                        improvement projects and will work directly with
+                        our Design and Engineering team.
+                    </span>
+                    <a
+                        href="#!"
+                        class="g-button g-button--black header__button"
+                    >
+                        Read more
+                    </a>
+                </div>
+                <div class="header__video-wrapper">
+                    <a class="header__video-item" href="#modal2">
+                        <img
+                            src="assets/images/player.png"
+                            alt="Player"
+                        >
+                    </a>
+                    <span class="header__video-description">
+                        Company video
+                    </span>
+                    <div class="remodal" data-remodal-id="modal2">
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                        <h1>Remodal</h1>
+                        <p>
+                            Responsive, lightweight, fast,
+                            synchronized with CSS animations, fully customizable
+                            modal window plugin with declarative configuration and hash tracking.
+                        </p>
+                        <br>
+                        <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+                        <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__slide-container header__slide-container--second">
+                <div class="header__title-wrapper">
+                    <h1 class="header__title">
+                        BUILDING THE<br>
+                        WORLD AROUND US
+                    </h1>
+                    <span class="header__description">
+                        Still other clients have reserved for capital
+                        improvement projects and will work directly with
+                        our Design and Engineering team.
+                    </span>
+                    <a
+                        href="#!"
+                        class="g-button g-button--black header__button"
+                    >
+                        Read more
+                    </a>
+                </div>
+                <div class="header__video-wrapper">
+                    <a class="header__video-item" href="#modal2">
+                        <img
+                            src="assets/images/player.png"
+                            alt="Player"
+                        >
+                    </a>
+                    <span class="header__video-description">
+                        Company video
+                    </span>
+                    <div class="remodal" data-remodal-id="modal2">
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                        <h1>Remodal</h1>
+                        <p>
+                            Responsive, lightweight, fast,
+                            synchronized with CSS animations, fully customizable
+                            modal window plugin with declarative configuration and hash tracking.
+                        </p>
+                        <br>
+                        <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+                        <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__slide-container header__slide-container--third">
+                <div class="header__title-wrapper">
+                    <h1 class="header__title">
+                        BUILDING THE<br>
+                        WORLD AROUND US
+                    </h1>
+                    <span class="header__description">
+                        Still other clients have reserved for capital
+                        improvement projects and will work directly with
+                        our Design and Engineering team.
+                    </span>
+                    <a
+                        href="#!"
+                        class="g-button g-button--black header__button"
+                    >
+                        Read more
+                    </a>
+                </div>
+                <div class="header__video-wrapper">
+                    <a class="header__video-item" href="#modal2">
+                        <img
+                            src="assets/images/player.png"
+                            alt="Player"
+                        >
+                    </a>
+                    <span class="header__video-description">
+                        Company video
+                    </span>
+                    <div class="remodal" data-remodal-id="modal2">
+                        <button data-remodal-action="close" class="remodal-close"></button>
+                        <h1>Remodal</h1>
+                        <p>
+                            Responsive, lightweight, fast,
+                            synchronized with CSS animations, fully customizable
+                            modal window plugin with declarative configuration and hash tracking.
+                        </p>
+                        <br>
+                        <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+                        <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__slider-nav">
+            <div class="header__arrow">
+                <div class="header__nav-wrapper">
+                    <span class="j-slider-nav header__current-slider">
+                        01
+                    </span>
+                    <span class="header__total-slide">
+                        03
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="services">
+        <div class="j-slider">
+            <div class="row services__slider-container">
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+                <div class="col-sm-3 services__img-tiles">
+
+                </div>
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+                <div class="col-sm-3 services__img-tiles">
+
+                </div>
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+                <div class="col-sm-3 services__img-tiles">
+
+                </div>
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+            </div>
+            <div class="row services__slider-container">
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+                <div class="col-sm-3 services__img-tiles">
+
+                </div>
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+                <div class="col-sm-3 services__img-tiles">
+
+                </div>
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+                <div class="col-sm-3 services__img-tiles">
+
+                </div>
+                <div class="col-sm-3 services__text-tiles">
+                    <span class="services__title">
+                        Our<br>
+                        services
+                    </span>
+                    <span class="services__text">
+                        Our mission is to provide the highest level
+                        of service for our client-partners from concept
+                        through construction.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="services__slider-nav">
+            <div class="services__arrow">
+                <div class="header__nav-wrapper">
+                    <span class="j-s-slider-nav header__current-slider">
+                        01
+                    </span>
+                    <span class="header__total-slide">
+                        02
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row social">
+        <div class="col-sm-3 social__price">
+            <a href="#!">
+                <img src="assets/images/pdf.png" alt="Price list">
+                <span class="social__price-title">Download price</span>
+            </a>
+        </div>
+        <div class="col-sm-3 social__contact">
+            <a href="#!">
+                <img src="assets/images/contact.png" alt="Contact us">
+                <span class="social__contact-title">Contact us</span>
+            </a>
+        </div>
+        <div class="col-sm-6 social__search">
+            <img
+                class="social__search-bg"
+                src="assets/images/search-bg.png"
+                alt="Search"
+            >
+            <div class="social__search-wrapper">
+                <input
+                    type="text"
+                    class="social__search-form"
+                    placeholder="What you're looking for"
+                >
+                <div class="social__search-icon-wrapper">
+                    <button type="button" class="social__search-icon"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 social__news">
+            <span class="social__news-title">
+                News
+            </span>
+            <div class="j-social-slider">
+                <div>
+                    <span class="social__news-data">
+                        12 february, 2015
+                    </span>
+                    <a href="#!" class="social__news-text">
+                        Project Design and Engineering Services
+                    </a>
+                    <span class="social__news-comments">
+                        23 comments
+                    </span>
+                </div>
+                <div>
+                    <span class="social__news-data">
+                        12 february, 2015
+                    </span>
+                    <a href="#!" class="social__news-text">
+                        Project Design and Engineering Services
+                    </a>
+                    <span class="social__news-comments">
+                        23 comments
+                    </span>
+                </div>
+                <div>
+                    <span class="social__news-data">
+                        12 february, 2015
+                    </span>
+                    <a href="#!" class="social__news-text">
+                        Project Design and Engineering Services
+                    </a>
+                    <span class="social__news-comments">
+                        23 comments
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 social__work">
+            <a href="#!">
+                <img src="assets/images/mech.png" alt="Work with us">
+                <span class="social__work-title">Work with us</span>
+            </a>
+        </div>
+        <div class="col-sm-3 social__subscribe">
+            <span class="social__subscribe-title">
+                Subscribe
+            </span>
+            <input
+                type="text"
+                class="social__subscribe-form"
+                placeholder="E-mail"
+            >
+            <button type="button" class="social__subscribe-btn">Sign Up</button>
+        </div>
+        <div class="col-sm-3 social__work social__work--g">
+            <a href="#!">
+                <img src="assets/images/mech.png" alt="Work with us">
+                <span class="social__work-title">Work with us</span>
+            </a>
+        </div>
+    </div>
+    <div class="article">
+        <div class="j-article-slider">
+            <div class="row article__slider-container">
+                <div class="col-sm-3 article__post">
+                    <h3 class="article__title">
+                        Contemporary<br>
+                        Villa
+                    </h3>
+                    <span class="article__text">
+                            Diversity is a buzzword often heard
+                            by brand managers, business tycoons,
+                            politicians, and more; but it's
+                            much more than that. To us at DM Construction,
+                            diversity is the name of the game.
+                        <br>
+                        <br>
+                            We offer a diverse set of skills to all
+                            clients in all fields, but also offer a
+                            diverse group of individuals who are able to
+                            deliver those skills. From Construction
+                            Managers and Project Managers, to licensed
+                            Architects and...
+                    </span>
+                    <a href="#!" class="g-button article__button">
+                        View project
+                    </a>
+                </div>
+                <div class="col-sm-6 article__bg-f">
+                    <img
+                        class="article__bg-img-f"
+                        src="assets/images/l-bg.png"
+                        alt="Mans work"
+                    >
+                </div>
+                <div class="col-sm-3 article__bg-s">
+                    <img
+                        class="article__bg-img-s"
+                        src="assets/images/l2-bg.png"
+                        alt="Dinosaur"
+                    >
+                </div>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="article__slider-nav">
+            <div class="article__arrow">
+                <div class="header__nav-wrapper">
+                    <span class="j-a-slider-nav header__current-slider">
+                        01
+                    </span>
+                    <span class="header__total-slide">
+                        03
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer row">
+        <div class="col-sm-4 footer__copyright">
+            <span class="footer__copyright-text">
+                    2015 © Copyright - Foundation theme by <a href="#!">Stylemixthemes</a>
+            </span>
+        </div>
+        <div class="col-sm-8 footer__links">
+            <a href="#!" class="footer__link">
+                Shop
+            </a>
+            <a href="#!" class="footer__link">
+                Contact us
+            </a>
+            <a href="#!" class="footer__link">
+                F.A.Q
+            </a>
+            <a href="#!" class="footer__link">
+                Work with us
+            </a>
+            <a href="#!" class="footer__link">
+                News & events
+            </a>
+            <a href="#!" class="footer__link">
+                Our works
+            </a>
+            <a href="#!" class="footer__link">
+                Services
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="libs/remodal/remodal.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+
+    <script src="assets/js/header/header.min.js"></script>
+    <script src="assets/js/services/services.min.js"></script>
+    <script src="assets/js/social/social.min.js"></script>
+    <script src="assets/js/article/article.min.js"></script>
+</body>
+</html>
